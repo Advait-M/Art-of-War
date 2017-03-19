@@ -61,6 +61,7 @@ Continue playing until the player or computer’s base cells all die. The person
 * Cell 9: This cell has 1 friendly and 1 enemy neighbour. It does not have enough comrades to survive meaning that it will die in the next generation. 
 
 ## Screenshot of a live game
+![Screenshot of a live game](/Screenshots/game.png?raw=true "Screenshot of a live game")
 
 ## Challenges Faced
 * Creating an interactive grid of JButtons was very hard to accomplish. Specifically, managing to detect when a JButton was pressed and acting upon it was very difficult. In the end, this was accomplished through a 2D array of JButtons with each JButton being assigned a MouseListener, whose actions were defined in the MouseHandler class, specifically in the mouseClicked method. This method allowed the program to see which button was clicked according to its x and y coordinates or row and column values.
