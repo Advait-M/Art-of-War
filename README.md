@@ -23,16 +23,16 @@ For my project, I decided to simulate war through the use of an interactive grid
 1. If the cell is a normal user/computer controlled cell, the number of friendly neighbours and enemy neighbours is calculated, then:
     1. If there are only 0 to 2 friendly neighbours (inclusive) then the cell dies due to loneliness (soldiers need comrades to keep their morale high in times of war).
     2. If there are more than 5 friendly neighbours then the cell dies since it is overcrowded (soldiers must have adequate living space in order to function well, especially in trenches).
-⋅⋅3. If there are more than 2 enemy cells surrounding the cell, then it will die since it will be attacked and overwhelmed (it is almost impossible to win a 1 versus 3 fight or worse).
-⋅⋅4. Otherwise, the cell will stay as is it is (stays alive).
-If the cell is a user/computer controlled base cell, the number of enemy neighbours (normal cells) will be calculated, then:
-If the base cell has 3 or more enemy neighbours then it will die (similar to a soldier, a base cannot survive a large attack).
-Otherwise, the base cell will stay alive
-If the cell is dead, then the number of user-controlled neighbours and computer-controlled neighbours is calculated, then:
-If it has exactly 3 of either neighbour type, then it becomes that neighbour type (soldiers can train more soldiers on the field). Note that too many friendly neighbours (more than 3) cannot train a new recruit since they will argue amongst themselves on strategies and techniques that they teach to the new recruit, similar to the idiom: “too many cooks in the kitchen”.
-If it has exactly 1 base cell in its immediate vicinity (the bounding 3x3 square with the cell as the center) and it does not have any enemies nearby then it becomes a normal cell (type is dependent on base type) e.g. a player base can spawn a player-controlled cell. This simulates how army bases can train soldiers and send them into battle. It also allows for the bases to be heavily guarded, which they are in times of real war. 
-Otherwise, the cell will stay dead
-If all base cells of any one player are dead then the other player will win e.g. if the computer’s base cells all die then the player/user will win. At this point, there will be no further generations calculated or displayed.
+    3. If there are more than 2 enemy cells surrounding the cell, then it will die since it will be attacked and overwhelmed (it is almost impossible to win a 1 versus 3 fight or worse).
+    4. Otherwise, the cell will stay as is it is (stays alive).
+2. If the cell is a user/computer controlled base cell, the number of enemy neighbours (normal cells) will be calculated, then:
+    1. If the base cell has 3 or more enemy neighbours then it will die (similar to a soldier, a base cannot survive a large attack).
+    2. Otherwise, the base cell will stay alive
+3. If the cell is dead, then the number of user-controlled neighbours and computer-controlled neighbours is calculated, then:
+    1. If it has exactly 3 of either neighbour type, then it becomes that neighbour type (soldiers can train more soldiers on the field). Note that too many friendly neighbours (more than 3) cannot train a new recruit since they will argue amongst themselves on strategies and techniques that they teach to the new recruit, similar to the idiom: “too many cooks in the kitchen”.
+    2. If it has exactly 1 base cell in its immediate vicinity (the bounding 3x3 square with the cell as the center) and it does not have any enemies nearby then it becomes a normal cell (type is dependent on base type) e.g. a player base can spawn a player-controlled cell. This simulates how army bases can train soldiers and send them into battle. It also allows for the bases to be heavily guarded, which they are in times of real war. 
+    3. Otherwise, the cell will stay dead
+4. If all base cells of any one player are dead then the other player will win e.g. if the computer’s base cells all die then the player/user will win. At this point, there will be no further generations calculated or displayed.
 
 
 
