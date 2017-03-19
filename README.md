@@ -33,10 +33,12 @@ If all base cells of any one player are dead then the other player will win e.g.
 
 
 ## Instructions
-Note: Please enable sound on your machine to ensure that the background music works
+*Note: Please enable sound on your machine to ensure that the background music works*
+
 Run the game (ArtOfWar) using NetBeans or another Java IDE (Integrated Development Environment).
 Select a cell to surround with 4 player-controlled bases as instructed by the dialog. Another set of 4 cells will be randomly chosen by the computer as its bases. These cells will not be very close to the player’s base cells to ensure the game does not end instantly. 
 Place 3x3 blocks of cells on the grid whenever desired. Beware that the computer will also place down a similar block in a random place when the player places a block. 
+
 Use the “FPS” (Frame per second) slider to adjust the speed of the game. The generation number shows how far the game has progressed. 
 Continue playing until the player or computer’s base cells all die. The person with base cells still alive wins the game, as shown in the ending dialog. 
 
