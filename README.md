@@ -1,12 +1,12 @@
 # Art-of-War
 An interactive Java game designed to simulate war. Similar mechanics to "Conway's Game of Life".
 
-*Phenomenon*
+## Phenomenon
 War is, without doubt, evil. It brings catastrophic death and destruction to those involved in its horrific path. However, it can also be very interesting to analyze the way in which armies move during times of war. Strategists are essential to winning a war since a wrongly placed army can cost a major battle. For example, chess is a game that is entirely based around the premise of strategy in war. In chess, there are over 288 billion different possible positions after only four moves! Similarly, in war there are an infinite amount of possibilities that a strategist must try to predict and plan for. 
 
 For my project, I decided to simulate war through the use of an interactive grid. My project aims to provide an engaging experience for the user while being a realistic simulation of war. My game is interactive so the user and simulate putting down armies into strategic places. However, it is best to be wary of putting down armies since the computer will replicate the user’s move in another spot. This simulates war in the sense that the enemy will react to one’s move and fight back. I have also incorporated “base” cells which are essentially specialized cells that one must protect, since if all base cells are lost on either side of the battle, then the respective player loses. Base cells also allow friendly cells to spawn nearby without much help, if there are no enemy cells nearby. This simulates real army bases in which recruits are trained and sent out to war except when the base is under attack. 
 
-*Possible states of any cell within the game*
+## Possible states of any cell within the game
 : Empty/dead cell
 : User-controlled soldier
 : Computer-controlled enemy
@@ -14,7 +14,7 @@ For my project, I decided to simulate war through the use of an interactive grid
 : Computer base cell (specialized function)
 
 
-*Rules for the evolution of a cell*
+## Rules for the evolution of a cell
 Note: Rules are listed in the priority order that they are executed in 
 If the cell is a normal user/computer controlled cell, the number of friendly neighbours and enemy neighbours is calculated, then:
 If there are only 0 to 2 friendly neighbours (inclusive) then the cell dies due to loneliness (soldiers need comrades to keep their morale high in times of war).
@@ -32,7 +32,7 @@ If all base cells of any one player are dead then the other player will win e.g.
 
 
 
-*Instructions*
+## Instructions
 Note: Please enable sound on your machine to ensure that the background music works
 Run the game (ArtOfWar) using NetBeans or another Java IDE (Integrated Development Environment).
 Select a cell to surround with 4 player-controlled bases as instructed by the dialog. Another set of 4 cells will be randomly chosen by the computer as its bases. These cells will not be very close to the player’s base cells to ensure the game does not end instantly. 
@@ -40,7 +40,7 @@ Place 3x3 blocks of cells on the grid whenever desired. Beware that the computer
 Use the “FPS” (Frame per second) slider to adjust the speed of the game. The generation number shows how far the game has progressed. 
 Continue playing until the player or computer’s base cells all die. The person with base cells still alive wins the game, as shown in the ending dialog. 
 
-*Sample generations*
+## Sample generations
 Generation 1:
 1
 2
@@ -75,15 +75,15 @@ Cell 7: This cell is a user-controlled base cell. The only way it can die is if 
 Cell 8: Since this cell is currently dead, it can only be recruited into an army if it has exactly 3 neighbours of any one army beside it. It only has 1 player-controlled neighbour and 2 computer-controlled neighbours, meaning that it will stay dead in the next generation. It has a player-controlled base directly next to it, however it is surrounded by 2 enemies so that means it cannot become a player-controlled cell (bases cannot train recruits while the recruit is being attacked).
 Cell 9: This cell has 1 friendly and 1 enemy neighbour. It does not have enough comrades to survive meaning that it will die in the next generation. 
 
-*Screenshot of a live game*
+## Screenshot of a live game
 
-*Challenges Faced*
+## Challenges Faced
 Creating an interactive grid of JButtons was very hard to accomplish. Specifically, managing to detect when a JButton was pressed and acting upon it was very difficult. In the end, this was accomplished through a 2D array of JButtons with each JButton being assigned a MouseListener, whose actions were defined in the MouseHandler class, specifically in the mouseClicked method. This method allowed the program to see which button was clicked according to its x and y coordinates or row and column values.
 Adding music to the game in the background was also quite tricky due to the way in which Java handles music. Initially, I tried adding an MP3 file to be the background music, however there was many problems related with the AudioInputStream. Surprisingly, when I switched to using a WAV file, the music worked perfectly. 
 Adding images to each button as the background was tough in the sense that these images needed to be very low resolution (around 10x10 pixels). This meant that I had to find recognizable images of player sprites that were super small. In the end, I used the PyMaze, a game similar to PAC-Man, player sprites used to create the SJAM Computer Science Club project in 2015, in which I worked on the artificial intelligence of the enemies.
 Adding base type cells was very difficult to add into the game without severely breaking the game mechanics. Initially, when I added base cells, the rules of the game essentially made them invulnerable causing the game to never end. After tinkering with the rules, I managed to allow for the base cells to be very tough to destroy but not impossible. 
 
-Credits
+## Credits
 Player/User soldier sprites:
 "Ninja [Animated]" by DezrasDragons on OpenGameArt.org - Public domain
 http://opengameart.org/content/ninja-animated 
