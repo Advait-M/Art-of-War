@@ -7,9 +7,10 @@ War is, without doubt, evil. It brings catastrophic death and destruction to tho
 For my project, I decided to simulate war through the use of an interactive grid. My project aims to provide an engaging experience for the user while being a realistic simulation of war. My game is interactive so the user and simulate putting down armies into strategic places. However, it is best to be wary of putting down armies since the computer will replicate the user’s move in another spot. This simulates war in the sense that the enemy will react to one’s move and fight back. I have also incorporated “base” cells which are essentially specialized cells that one must protect, since if all base cells are lost on either side of the battle, then the respective player loses. Base cells also allow friendly cells to spawn nearby without much help, if there are no enemy cells nearby. This simulates real army bases in which recruits are trained and sent out to war except when the base is under attack. 
 
 ## Possible states of any cell within the game
-* ![Empty/dead cell](/Screenshots/empty.png?raw=true "Empty/dead cell") : Empty/dead cell
-* ![User-controlled soldier](/Screenshots/player.png?raw=true "User-controlled soldier") : User-controlled soldier
-* : Computer-controlled enemy
+![Empty/dead cell](/Screenshots/empty.png?raw=true "Empty/dead cell") : Empty/dead cell
+
+![User-controlled soldier](/Screenshots/player.png?raw=true "User-controlled soldier") : User-controlled soldier
+![Computer-controlled soldier](/Screenshots/enemy.png?raw=true "Computer-controlled soldier") : Computer-controlled enemy
 * : User base cell (specialized function)
 * : Computer base cell (specialized function)
 
