@@ -44,15 +44,15 @@ Continue playing until the player or computer’s base cells all die. The person
 ![Sample Generations](/Screenshots/generations.PNG?raw=true "Sample Generations")
 
 
-Cell 1: Since this cell has only 2 friendly neighbours it will die (too lonely)
-Cell 2: This cell has 3 friendly neighbours which means it will live (it only has 1 enemy neighbour which is not enough to kill this cell).
-Cell 3: This cell has 2 friendly neighbours meaning it will die (too lonely). It also has 1 enemy neighbour but that will not affect its next state.
-Cell 4: Since this cell is currently dead, it can be recruited into the player’s army (becomes a soldier) due to the fact that it has exactly 1 base in its immediate vicinity and no enemies surrounding it. It also has exactly 3 player-controlled cells around it which results in the same outcome. 
-Cell 5: This cell has 3 friendly neighbours which means it can live on to the next generation. It does have 2 enemy neighbours but only 3 or more enemies can overwhelm the cell. 
-Cell 6: This cell has 3 enemy neighbours (player-controlled) so it will die in the next generation. It has 1 friendly (computer-controlled) neighbour but that will not affect its next state.
-Cell 7: This cell is a user-controlled base cell. The only way it can die is if it has 3 or more enemy neighbours, which it does not have (currently has no enemy neighbours). This means it will continue living in the next generation.
-Cell 8: Since this cell is currently dead, it can only be recruited into an army if it has exactly 3 neighbours of any one army beside it. It only has 1 player-controlled neighbour and 2 computer-controlled neighbours, meaning that it will stay dead in the next generation. It has a player-controlled base directly next to it, however it is surrounded by 2 enemies so that means it cannot become a player-controlled cell (bases cannot train recruits while the recruit is being attacked).
-Cell 9: This cell has 1 friendly and 1 enemy neighbour. It does not have enough comrades to survive meaning that it will die in the next generation. 
+* Cell 1: Since this cell has only 2 friendly neighbours it will die (too lonely)
+* Cell 2: This cell has 3 friendly neighbours which means it will live (it only has 1 enemy neighbour which is not enough to kill this cell).
+* Cell 3: This cell has 2 friendly neighbours meaning it will die (too lonely). It also has 1 enemy neighbour but that will not affect its next state.
+* Cell 4: Since this cell is currently dead, it can be recruited into the player’s army (becomes a soldier) due to the fact that it has exactly 1 base in its immediate vicinity and no enemies surrounding it. It also has exactly 3 player-controlled cells around it which results in the same outcome. 
+* Cell 5: This cell has 3 friendly neighbours which means it can live on to the next generation. It does have 2 enemy neighbours but only 3 or more enemies can overwhelm the cell. 
+* Cell 6: This cell has 3 enemy neighbours (player-controlled) so it will die in the next generation. It has 1 friendly (computer-controlled) neighbour but that will not affect its next state.
+* Cell 7: This cell is a user-controlled base cell. The only way it can die is if it has 3 or more enemy neighbours, which it does not have (currently has no enemy neighbours). This means it will continue living in the next generation.
+* Cell 8: Since this cell is currently dead, it can only be recruited into an army if it has exactly 3 neighbours of any one army beside it. It only has 1 player-controlled neighbour and 2 computer-controlled neighbours, meaning that it will stay dead in the next generation. It has a player-controlled base directly next to it, however it is surrounded by 2 enemies so that means it cannot become a player-controlled cell (bases cannot train recruits while the recruit is being attacked).
+* Cell 9: This cell has 1 friendly and 1 enemy neighbour. It does not have enough comrades to survive meaning that it will die in the next generation. 
 
 ## Screenshot of a live game
 
