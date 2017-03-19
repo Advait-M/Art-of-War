@@ -41,28 +41,7 @@ Use the “FPS” (Frame per second) slider to adjust the speed of the game. The
 Continue playing until the player or computer’s base cells all die. The person with base cells still alive wins the game, as shown in the ending dialog. 
 
 ## Sample generations
-Generation 1:
-1
-2
-3
-4
-5
-6
-7
-8
-9
-
-
-Generation 2:
-1
-2
-3
-4
-5
-6
-7
-8
-9
+![Sample Generations](/Screenshots/generations.PNG?raw=true "Sample Generations")
 
 
 Cell 1: Since this cell has only 2 friendly neighbours it will die (too lonely)
