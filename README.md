@@ -10,9 +10,12 @@ For my project, I decided to simulate war through the use of an interactive grid
 ![Empty/dead cell](/Screenshots/empty.png?raw=true "Empty/dead cell") : Empty/dead cell
 
 ![User-controlled soldier](/Screenshots/player.png?raw=true "User-controlled soldier") : User-controlled soldier
+
 ![Computer-controlled soldier](/Screenshots/enemy.png?raw=true "Computer-controlled soldier") : Computer-controlled enemy
-* : User base cell (specialized function)
-* : Computer base cell (specialized function)
+
+![User base cell (specialized function)](/Screenshots/base1.png?raw=true "User base cell (specialized function)") : User base cell (specialized function)
+
+![Computer base cell (specialized function)](/Screenshots/base2.png?raw=true "User base cell (specialized function)") : Computer base cell (specialized function)
 
 
 ## Rules for the evolution of a cell
