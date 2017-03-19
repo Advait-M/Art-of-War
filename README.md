@@ -19,12 +19,12 @@ For my project, I decided to simulate war through the use of an interactive grid
 
 
 ## Rules for the evolution of a cell
-Note: Rules are listed in the priority order that they are executed in 
-If the cell is a normal user/computer controlled cell, the number of friendly neighbours and enemy neighbours is calculated, then:
-If there are only 0 to 2 friendly neighbours (inclusive) then the cell dies due to loneliness (soldiers need comrades to keep their morale high in times of war).
-If there are more than 5 friendly neighbours then the cell dies since it is overcrowded (soldiers must have adequate living space in order to function well, especially in trenches).
-If there are more than 2 enemy cells surrounding the cell, then it will die since it will be attacked and overwhelmed (it is almost impossible to win a 1 versus 3 fight or worse).
-Otherwise, the cell will stay as is it is (stays alive).
+*Note: Rules are listed in the priority order that they are executed in*
+1. If the cell is a normal user/computer controlled cell, the number of friendly neighbours and enemy neighbours is calculated, then:
+⋅⋅1. If there are only 0 to 2 friendly neighbours (inclusive) then the cell dies due to loneliness (soldiers need comrades to keep their morale high in times of war).
+⋅⋅2. If there are more than 5 friendly neighbours then the cell dies since it is overcrowded (soldiers must have adequate living space in order to function well, especially in trenches).
+⋅⋅3. If there are more than 2 enemy cells surrounding the cell, then it will die since it will be attacked and overwhelmed (it is almost impossible to win a 1 versus 3 fight or worse).
+⋅⋅4. Otherwise, the cell will stay as is it is (stays alive).
 If the cell is a user/computer controlled base cell, the number of enemy neighbours (normal cells) will be calculated, then:
 If the base cell has 3 or more enemy neighbours then it will die (similar to a soldier, a base cannot survive a large attack).
 Otherwise, the base cell will stay alive
